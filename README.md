@@ -40,4 +40,13 @@ Once you have the basic vagrant code in the file and save, jump onto your powers
 ```
 vagrant up
 ```
+If you want to shutdown your vm then the command below will do it for you:
+```
+vagrant halt
+```
+and to delete all traces of your vagrant machine then the code below will do the magic:
+```
+vagrant destroy
+```
+
 
