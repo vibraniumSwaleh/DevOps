@@ -20,33 +20,5 @@ To deploy virtual machines for this demo in window 11, a number of tools were us
 - Window powershell - Cross-platform task automation command-line shell. If you don't have it, you can get it from here [powershell](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.2). 
 - Visual Studio - [source code editor](https://visualstudio.microsoft.com/).
 
-## Deploying VM
-
-The VM deployed was a [bento/ubuntu-18.04](https://app.vagrantup.com/bento/boxes/ubuntu-18.04) with minimal configuration. Any box your choice can be used in this deployment. Vagrant has a list of boxes it supports but you can use your own custom ones if you so wish.
-
-Open powershell and navigate to a folder (preferably an empty one) you want to have your box in. Then run the vagrant command below to setup your vagrant config file.
-```
-vagrant init
-```
-The config file can be openned in any text editor to make changes to the configurations. 
-Here is the config file used:
-```
-Vagrant.configure("2") do |config|
-  config.vm.box = "bento/ubuntu-18.04"
-end
-```
-
-Once you have the basic vagrant code in the file and save, jump onto your powershell and spin up your vm with a single line of command:
-```
-vagrant up
-```
-If you want to shutdown your vm then the command below will do it for you:
-```
-vagrant halt
-```
-and to delete all traces of your vagrant machine then the code below will do the magic:
-```
-vagrant destroy
-```
 
 
